@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/statistic"
+        android:id="@+id/item_statistic"
+        android:icon="@mipmap/ic_statistic"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:title="@string/settings"
+        android:id="@+id/item_settings"
+        android:icon="@mipmap/ic_settings"
+        app:showAsAction="always">
+    </item>
+
+</menu>
