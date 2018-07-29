@@ -1,4 +1,4 @@
-package com.tkachuk.dday.ui;
+package com.tkachuk.dday.ui.main;
 
 import android.arch.lifecycle.Observer;
 import android.content.Intent;

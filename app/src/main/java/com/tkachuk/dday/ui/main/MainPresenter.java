@@ -1,4 +1,4 @@
-package com.tkachuk.dday.ui;
+package com.tkachuk.dday.ui.main;
 
 import com.tkachuk.dday.data.model.Rating;
 

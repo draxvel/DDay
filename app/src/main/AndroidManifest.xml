@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity"
+        <activity android:name=".ui.main.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +20,11 @@
 
         <activity android:name=".ui.rating.RatingActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".ui.MainActivity" >
+            android:parentActivityName=".ui.main.MainActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.MainActivity"
+                android:value=".ui.main.MainActivity"
             />
         </activity>
     </application>
