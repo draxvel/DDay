@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">DDay</string>
-    <string name="btn_rate">Rate Day</string>
     <string name="your_dday_level">Your DDay level:</string>
+    <string name="btn_rate">Rate Day</string>
     <string name="_30_days">30 days</string>
     <string name="_0">0%</string>
     <string name="day">day</string>
+    <string name="date">date</string>
     <string name="statistic">Statistic</string>
     <string name="settings">Settings</string>
 </resources>
