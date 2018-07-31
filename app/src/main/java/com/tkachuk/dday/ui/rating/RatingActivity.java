@@ -45,6 +45,7 @@ public class RatingActivity extends AppCompatActivity implements RatingContract.
             public void onClick(View v) {
                 ratingPresenter.addRating((Date)getIntent().getSerializableExtra("date"),
                         rb_general.getRating());
+                finish();
                 }
         });
     }
