@@ -2,11 +2,13 @@ package com.tkachuk.dday.ui.main;
 
 import android.arch.lifecycle.Observer;
 import android.content.Intent;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,6 +17,7 @@ import com.tkachuk.dday.R;
 import com.tkachuk.dday.data.db.RatingViewModel;
 import com.tkachuk.dday.data.model.Rating;
 import com.tkachuk.dday.ui.rating.RatingActivity;
+import com.tkachuk.dday.ui.settings.SettingsActivity;
 import com.tkachuk.dday.util.DateManager;
 
 import java.text.DecimalFormat;
@@ -38,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.Main
         initView();
         initPresenter();
         initListener();
+
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
     }
 
     private void initView() {
@@ -80,7 +85,6 @@ public class MainActivity extends AppCompatActivity implements MainContract.Main
                 }
             }
         });
-
     }
 
     @Override
@@ -90,8 +94,10 @@ public class MainActivity extends AppCompatActivity implements MainContract.Main
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.item_settings){
+            startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
